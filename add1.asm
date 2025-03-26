@@ -1,0 +1,11 @@
+ AREA add1, CODE, READONLY
+START
+  MOV R1,#0
+JUMP
+    ADD R1,R1,#1
+    ADD RO,RO,R1
+    CMP R1,#10
+    BNE JUMP
+STOP  
+    B STOP
+    END
